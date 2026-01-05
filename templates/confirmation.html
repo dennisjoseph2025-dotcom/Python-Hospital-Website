@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Booking Confirmation - City Hospital
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <!-- Success Card -->
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-5 text-center">
+                    <!-- Success Icon -->
+                    <div class="mb-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-success bg-opacity-10" 
+                             style="width: 100px; height: 100px;">
+                            <i class="fas fa-check-circle fa-4x text-success"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Title -->
+                    <h1 class="display-6 fw-bold mb-3 text-success">Appointment Confirmed!</h1>
+                    
+                    <!-- Message -->
+                    <p class="lead text-muted mb-4">
+                        Your appointment has been successfully booked with City Hospital.
+                    </p>                   
+                    <!-- Action Buttons -->
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                        <a href="{% url 'home' %}" class="btn btn-primary btn-lg px-5">
+                            <i class="fas fa-home me-2"></i>Back to Home
+                        </a>
+                        <a href="{% url 'doctors' %}" class="btn btn-outline-primary btn-lg px-5">
+                            <i class="fas fa-user-md me-2"></i>View Doctors
+                        </a>
+                        <a href="{% url 'booking' %}" class="btn btn-outline-success btn-lg px-5">
+                            <i class="fas fa-plus-circle me-2"></i>New Booking
+                        </a>
+                    </div>
+                    
+                    <!-- Additional Information -->
+                    <div class="mt-5 pt-4 border-top">
+                        <h6 class="text-secondary mb-3">
+                            <i class="fas fa-exclamation-circle me-2"></i>
+                            Important Information
+                        </h6>
+                        <div class="row text-start">
+                            <div class="col-md-6 mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <small>Bring your ID proof</small>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <small>Carry previous medical records</small>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <small>Wear a mask (if applicable)</small>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                <small>Payment at reception</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Contact -->
+                    <div class="alert alert-warning mt-4" role="alert">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-phone-alt fa-2x me-3"></i>
+                            <div>
+                                <h6 class="alert-heading mb-1">Emergency Contact</h6>
+                                <p class="mb-0">For emergencies, call: <strong>012-345-6789</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}

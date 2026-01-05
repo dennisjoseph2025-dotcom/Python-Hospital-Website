@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contact Us - City Hospital
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center fw-bold mb-4">Contact City Hospital</h1>
+    <hr class="mx-auto mb-5" style="width: 150px; border-top: 2px solid #3498db;">
+    
+    <!-- Emergency Alert -->
+    <div class="alert alert-danger mb-5">
+        <div class="d-flex align-items-center">
+            <i class="fas fa-ambulance fa-2x me-3"></i>
+            <div>
+                <h5 class="mb-1">Emergency Contact</h5>
+                <p class="mb-0 fs-4">012-345-6789</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <!-- Contact Information -->
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-5">
+                    <div class="row">
+                        <!-- Left Column -->
+                        <div class="col-md-6 border-end">
+                            <h4 class="mb-4 text-primary">
+                                <i class="fas fa-info-circle me-2"></i>
+                                Contact Information
+                            </h4>
+                            
+                            <div class="mb-4">
+                                <h6 class="text-secondary">Address</h6>
+                                <p class="mb-0">
+                                    City Hospital<br>
+                                    123 Medical Center Drive<br>
+                                    Cityville, State 12345
+                                </p>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h6 class="text-secondary">Phone Numbers</h6>
+                                <p class="mb-0">
+                                    <strong>Appointments:</strong> 012-345-6790<br>
+                                    <strong>Emergency:</strong> 012-345-6789<br>
+                                    <strong>Billing:</strong> 012-345-6791<br>
+                                    <strong>General:</strong> 012-345-6788
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column -->
+                        <div class="col-md-6">
+                            <div class="mb-4">
+                                <h6 class="text-secondary">Email</h6>
+                                <p class="mb-0">
+                                    <strong>General:</strong> info@cityhospital.com<br>
+                                    <strong>Appointments:</strong> appointments@cityhospital.com<br>
+                                    <strong>Billing:</strong> billing@cityhospital.com
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h6 class="text-secondary">Working Hours</h6>
+                                <p class="mb-0">
+                                    <strong>Outpatient:</strong> Mon-Sat: 8:00 AM - 8:00 PM<br>
+                                    <strong>Emergency:</strong> 24/7<br>
+                                    <strong>Pharmacy:</strong> 7:00 AM - 11:00 PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

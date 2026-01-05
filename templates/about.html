@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About Us - City Hospital
+{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center fw-bold mb-4">About City Hospital</h1>
+    <hr class="mx-auto mb-5" style="width: 150px; border-top: 2px solid #3498db;">
+
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <h3 class="mb-4">Our Mission</h3>
+            <p class="lead">
+                At City Hospital, we are dedicated to providing exceptional healthcare services with compassion and
+                excellence.
+                Our mission is to improve the health and well-being of our community through outstanding patient care.
+            </p>
+            <p>
+                Founded in 1985, City Hospital has grown to become one of the region's leading healthcare providers.
+                With over 200 expert doctors and 500+ beds, we offer comprehensive medical services across all
+                specialties.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h3 class="mb-4">Our Vision</h3>
+            <p>
+                We envision a healthier community where everyone has access to quality healthcare. Our commitment to
+                innovation, patient-centered care, and medical excellence drives us to constantly improve our services.
+            </p>
+            <div class="mt-4">
+                <h5>Key Statistics:</h5>
+                <!-- <ul class="list-unstyled"> -->
+                <i class="fas fa-check-circle text-primary me-2"></i>35+ Years of Service<br>
+                <i class="fas fa-check-circle text-primary me-2"></i>200+ Expert Doctors<br>
+                <i class="fas fa-check-circle text-primary me-2"></i>500+ Hospital Beds<br>
+                <i class="fas fa-check-circle text-primary me-2"></i>24/7 Emergency Services<br>
+                <!-- </ul> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h3 class="text-center mb-4">Our Departments</h3>
+            <div class="row g-3">
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-3 border rounded">
+                        <i class="fas fa-heartbeat fa-2x text-primary mb-2"></i>
+                        <h6>Cardiology</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-3 border rounded">
+                        <i class="fas fa-brain fa-2x text-primary mb-2"></i>
+                        <h6>Neurology</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-3 border rounded">
+                        <i class="fas fa-child fa-2x text-primary mb-2"></i>
+                        <h6>Pediatrics</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center p-3 border rounded">
+                        <i class="fas fa-bone fa-2x text-primary mb-2"></i>
+                        <h6>Orthopedics</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

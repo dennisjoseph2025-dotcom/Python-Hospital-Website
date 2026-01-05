@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+BOOKING
+{% endblock %}
+{% block content %}
+<h1 class="text-center">BOOKING PAGE</h1>
+<hr>
+<br>
+<div class="container w-25 text-center bg-">
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form|crispy }}
+    <div class="d-grid gap-2">
+        <button
+            type="submit"
+            name=""
+            id=""
+            class="btn btn-primary my-3"
+        >
+            Button
+        </button>
+    </div>
+    
+</form>
+</div>
+{% endblock %}
